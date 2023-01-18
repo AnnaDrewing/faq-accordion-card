@@ -9,6 +9,7 @@ body {
     /* typography */
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1rem;
+    color:hsl(238, 29%, 16%);
     /* visual */
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
@@ -20,11 +21,12 @@ body {
     height: 70vh;
     /* visual */
     border-radius: 15px;
-    background-color: white;
+    background-color:white;
     background-image: url('./images/bg-pattern-desktop.svg');
     background-size: 60vw;
     background-position: left -280% bottom 40%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .art-deco {
@@ -40,25 +42,63 @@ body {
     top: 5vh;
 }
 
-#illustration-box {
+.illustration-box {
     width: 15vw;
     position: fixed;
     left: 8vw;
     bottom: 30vh;
 }
 
+.box-moved {
+    left: 4vw;
+}
+
 .faq {
     /* box model */
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 50%;
     padding: 5%;
 }
 
 header {
     font-size: 2rem;
     font-weight: 700;
+    margin: 1rem 0;
 }
+
+hr {
+    color: hsl(240, 5%, 91%);
+    width: 100%;
+    margin: 0;
+}
+
+.q {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.q:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: 400;
+}
+
+.q-clicked {
+    font-weight: 700;
+}
+
 .a {
+    color: hsl(237, 12%, 33%);
     display: none;
+}
+
+.opened {
+    display: block;
+    margin: 1rem 0;
+}
+
+.arrow-icon-down {
+    align-self: center;
 }
