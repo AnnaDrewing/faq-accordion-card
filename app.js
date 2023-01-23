@@ -1,5 +1,7 @@
 let box = document.querySelector(".illustration-box");
 let questions = document.querySelectorAll(".q");
+let arrowImgs = document.querySelectorAll(".arrow-icon-down");
+let answers = document.querySelectorAll(".a");
 
 questions.forEach((q) => {
   q.addEventListener("mouseover", () => {
@@ -10,8 +12,6 @@ questions.forEach((q) => {
   });
 });
 
-let answers = document.querySelectorAll(".a");
-
 for (const [index, question] of questions.entries()) {
   question.addEventListener("click", () => {
     openAndCloseAnswer(index);
@@ -19,19 +19,34 @@ for (const [index, question] of questions.entries()) {
 }
 
 function openAndCloseAnswer(index) {
-  let currentAnswer = answers[index];
-  let currentQuestion = questions[index];
-  if (currentAnswer.classList.contains("opened")) {
-    currentQuestion.classList.remove("q-clicked");
-    currentAnswer.classList.remove("opened");
+  if (answers[index].classList.contains("opened")) {
+    closeAnswer(index);
   } else {
-    answers.forEach((a) => {
-      a.classList.remove("opened");
-    });
-    questions.forEach((q) => {
-      q.classList.remove("q-clicked");
-    });
-    currentAnswer.classList.add("opened");
-    currentQuestion.classList.add("q-clicked");
+    removeClickedClasses();
+    openAnswer(index);
   }
+}
+
+function removeClickedClasses() {
+  answers.forEach((a) => {
+    a.classList.remove("opened");
+  });
+  questions.forEach((q) => {
+    q.classList.remove("q-clicked");
+  });
+  arrowImgs.forEach((icon) => {
+    icon.classList.remove("arrow-icon-up");
+  });
+}
+
+function openAnswer(index) {
+  answers[index].classList.add("opened");
+  questions[index].classList.add("q-clicked");
+  arrowImgs[index].classList.add("arrow-icon-up");
+}
+
+function closeAnswer(index) {
+  answers[index].classList.remove("opened");
+  questions[index].classList.remove("q-clicked");
+  arrowImgs[index].classList.remove("arrow-icon-up");
 }

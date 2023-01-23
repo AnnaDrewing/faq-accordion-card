@@ -102,3 +102,7 @@ hr {
 .arrow-icon-down {
     align-self: center;
 }
+
+.arrow-icon-up {
+    transform: rotate(180deg);
+}
