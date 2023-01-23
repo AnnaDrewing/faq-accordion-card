@@ -20,6 +20,7 @@ body {
     display: flex;
     width: 70vw;
     height: 70vh;
+    margin-top: 3vh;
     /* visual */
     border-radius: 15px;
     background-color:white;
@@ -29,6 +30,8 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
+
 
 .art-deco {
     /* box model*/
@@ -45,11 +48,12 @@ body {
     width: 37vw;
 }
 
+
 .illustration-box {
     /* positioning */
     position: fixed;
-    left: 8vw;
-    bottom: 30vh;
+    left: 7vw;
+    bottom: 33vh;
     /* box model */
     width: 15vw;
 }
@@ -132,9 +136,56 @@ hr {
 }
 
 .attribution a:hover {
-    color: hsl(240, 73%, 65%);
+    color: hsl(238, 29%, 16%);
 }
 
 .attribution a:visited {
     color:white;
+}
+@media (max-width: 500px) {
+    .body {
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-position: top;
+    }
+
+    .frequently-asked-questions {
+        width: 80vw;
+        height: 80vh;
+        margin-top: 12vh;
+        display: flex;
+        flex-direction: column;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-position: top;
+    }
+    
+    .art-deco {
+        width: 48vw;
+        height: 30vh;
+        position: absolute;
+        top: 2vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-image: url('./images/illustration-woman-online-mobile.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .illustration-box, 
+    #woman-online {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+        margin: 5vh 0 2vh 0;
+    }
+
+    .faq {
+        width: 80%;
+        margin: 10vh auto;
+        font-size: 0.9rem;
+    }
 }
