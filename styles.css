@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 body {
     /* box model */
     display: flex;
@@ -36,17 +37,21 @@ body {
 }
 
 #woman-online {
-    width: 37vw;
+    /* positioning */
     position: relative;
-    left: -8vw;
     top: 5vh;
+    left: -8vw;
+    /* box model*/
+    width: 37vw;
 }
 
 .illustration-box {
-    width: 15vw;
+    /* positioning */
     position: fixed;
     left: 8vw;
     bottom: 30vh;
+    /* box model */
+    width: 15vw;
 }
 
 .box-moved {
@@ -62,27 +67,33 @@ body {
 }
 
 header {
+    /* box model */
+    margin: 1rem 0;
+    /* typography */
     font-size: 2rem;
     font-weight: 700;
-    margin: 1rem 0;
 }
 
 hr {
-    color: hsl(240, 5%, 91%);
+    /* box model */
     width: 100%;
     margin: 0;
+    /* typography */
+    color: hsl(240, 5%, 91%);
 }
 
 .q {
-    width: 100%;
-    margin: 1rem 0;
+    /* box model */
     display: flex;
     justify-content: space-between;
     align-content: center;
+    width: 100%;
+    margin: 1rem 0;
 }
 .q:hover {
-    color: hsl(14, 88%, 65%);
+    /* typography */
     font-weight: 400;
+    color: hsl(14, 88%, 65%);
 }
 
 .q-clicked {
@@ -90,8 +101,8 @@ hr {
 }
 
 .a {
-    color: hsl(237, 12%, 33%);
     display: none;
+    color: hsl(237, 12%, 33%);
 }
 
 .opened {
@@ -105,4 +116,25 @@ hr {
 
 .arrow-icon-up {
     transform: rotate(180deg);
+}
+
+.attribution {
+    font-size: 0.75em;
+    text-align: center;
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 10px;
+    color: white;
+}
+
+.attribution a {
+    color:hsl(14, 88%, 65%);
+}
+
+.attribution a:hover {
+    color: hsl(240, 73%, 65%);
+}
+
+.attribution a:visited {
+    color:white;
 }
