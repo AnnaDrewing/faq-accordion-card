@@ -142,6 +142,7 @@ hr {
 .attribution a:visited {
     color:white;
 }
+
 @media (max-width: 500px) {
     .body {
         background-image: url('./images/bg-pattern-mobile.svg');
@@ -149,9 +150,9 @@ hr {
     }
 
     .frequently-asked-questions {
-        width: 80vw;
+        width: 90vw;
         height: 80vh;
-        margin-top: 12vh;
+        margin-top: 15vh;
         display: flex;
         flex-direction: column;
         background-position: top;
@@ -159,7 +160,7 @@ hr {
         background-image: url('./images/bg-pattern-mobile.svg');
         background-position: top;
     }
-    
+
     .art-deco {
         width: 48vw;
         height: 30vh;
@@ -180,11 +181,11 @@ hr {
 
     header {
         text-align: center;
-        margin: 5vh 0 2vh 0;
+        margin: 3vh 0 2vh 0;
     }
 
     .faq {
-        width: 80%;
+        width: 85%;
         margin: 10vh auto;
         font-size: 0.9rem;
     }
