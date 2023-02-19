@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AnnaDrewing/faq-accordion-card)
-- Live Site URL: [Add live site URL here](https://annadrewing.github.io/faq-accordion-card/)
+- Solution URL: [GitHub Repository](https://github.com/AnnaDrewing/faq-accordion-card)
+- Live Site URL: [GitHub Deployment](https://annadrewing.github.io/faq-accordion-card/)
 
 ## My process
 
