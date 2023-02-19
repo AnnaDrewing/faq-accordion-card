@@ -31,8 +31,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .art-deco {
     /* box model*/
     width: 35vw;
@@ -53,7 +51,7 @@ body {
     /* positioning */
     position: fixed;
     left: 7vw;
-    bottom: 33vh;
+    bottom: 40vh;
     /* box model */
     width: 15vw;
 }
@@ -144,21 +142,15 @@ hr {
 }
 
 @media (max-width: 500px) {
-    .body {
-        background-image: url('./images/bg-pattern-mobile.svg');
-        background-position: top;
-    }
-
     .frequently-asked-questions {
         width: 90vw;
         height: 80vh;
-        margin-top: 15vh;
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
-        background-position: top;
-        background-repeat: no-repeat;
         background-image: url('./images/bg-pattern-mobile.svg');
         background-position: top;
+        background-repeat: no-repeat;
     }
 
     .art-deco {
@@ -186,7 +178,89 @@ hr {
 
     .faq {
         width: 85%;
+        margin: 5vh auto;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .frequently-asked-questions {
+        width: 80vw;
+        height: 75vh;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-size: 50%;
+        background-position: top;
+    }
+    
+    .art-deco {
+        width: 48vw;
+        height: 30vh;
+        position: absolute;
+        top: 1vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-image: url('./images/illustration-woman-online-mobile.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    
+    .illustration-box, 
+     #woman-online {
+        display: none;
+    }
+    
+    header {
+        text-align: center;
+        margin: 4vh 0 2vh 0;
+    }
+    
+    .faq {
+        width: 80%;
         margin: 10vh auto;
         font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .frequently-asked-questions {
+        /* box model */
+        display: flex;
+        width: 80vw;
+        height: 75vh;
+        margin-top: 3vh;
+        background-image: none;
+        overflow: visible;
+    }
+
+    .art-deco {
+        /* box model*/
+        width: 40vw;
+        overflow: hidden;
+    }
+    
+    #woman-online {
+        /* positioning */
+        position: relative;
+        top: 10vh;
+        left: -5vw;;
+        width: 40vw;
+        height: auto;
+    }
+    
+    .illustration-box {
+        /* positioning */
+        position: fixed;
+        left: 0;
+        bottom: 45vh;
+        /* box model */
+        width: 20%;
     }
 }
